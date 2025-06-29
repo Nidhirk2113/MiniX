@@ -1,0 +1,10 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+# Godot-generated cache files (not needed in Git)
+.import/
+.mono/
+*.import
+
+# Ignore local export settings (optional)
+export_presets.cfg

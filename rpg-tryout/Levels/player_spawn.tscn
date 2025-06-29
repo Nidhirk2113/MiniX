@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbq0jhqsmixl7"]
+
+[ext_resource type="Texture2D" uid="uid://dc3fvlut6f55d" path="res://Player/Front animations/spr_player_front_idle.png" id="1_8ku20"]
+[ext_resource type="Script" path="res://Levels/Scripts/player_spawn.gd" id="1_sabjw"]
+
+[node name="PlayerSpawn" type="Node2D"]
+script = ExtResource("1_sabjw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.787345, 0.279112, 0.333326, 1)
+texture = ExtResource("1_8ku20")
+hframes = 12
+frame = 2

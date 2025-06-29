@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckpnv8rosd5c0"]
+
+[ext_resource type="PackedScene" uid="uid://dhpd2lodjn2vc" path="res://GUI/player_hud/heart_gui.tscn" id="1_6i36k"]
+[ext_resource type="Script" path="res://GUI/player_hud/player_hud.gd" id="1_olfer"]
+
+[node name="PlayerHud" type="CanvasLayer"]
+script = ExtResource("1_olfer")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HFlowContainer" type="HFlowContainer" parent="Control"]
+layout_mode = 0
+offset_left = 259.0
+offset_top = 19.0
+offset_right = 389.0
+offset_bottom = 29.0
+scale = Vector2(2, 2)
+theme_override_constants/h_separation = 4
+theme_override_constants/v_separation = 3
+alignment = 1
+
+[node name="Heart" parent="Control/HFlowContainer" instance=ExtResource("1_6i36k")]
+layout_mode = 2
+
+[node name="Heart2" parent="Control/HFlowContainer" instance=ExtResource("1_6i36k")]
+layout_mode = 2
+
+[node name="Heart3" parent="Control/HFlowContainer" instance=ExtResource("1_6i36k")]
+layout_mode = 2
+
+[node name="Heart4" parent="Control/HFlowContainer" instance=ExtResource("1_6i36k")]
+layout_mode = 2
+
+[node name="Heart5" parent="Control/HFlowContainer" instance=ExtResource("1_6i36k")]
+layout_mode = 2
+
+[node name="Heart6" parent="Control/HFlowContainer" instance=ExtResource("1_6i36k")]
+layout_mode = 2

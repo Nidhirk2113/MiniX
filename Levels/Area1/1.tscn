@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://dcd1l8adlgpp1"]
+
+[ext_resource type="PackedScene" uid="uid://blpvb5c7dkeo6" path="res://Scenes/Ground.tscn" id="1_jk6r5"]
+[ext_resource type="Script" path="res://Levels/Scripts/level.gd" id="1_wo6d4"]
+[ext_resource type="PackedScene" uid="uid://bbq0jhqsmixl7" path="res://Levels/player_spawn.tscn" id="2_0i5yo"]
+[ext_resource type="PackedScene" uid="uid://dlhx31pe4lx5i" path="res://Enemies/Slime/Slime.tscn" id="3_64huj"]
+
+[node name="1" type="Node2D"]
+script = ExtResource("1_wo6d4")
+
+[node name="TileSet" parent="." instance=ExtResource("1_jk6r5")]
+
+[node name="PlayerSpawn" parent="." instance=ExtResource("2_0i5yo")]
+light_mask = 2
+visibility_layer = 2
+position = Vector2(-40, 257)
+
+[node name="Slime" parent="." instance=ExtResource("3_64huj")]
+position = Vector2(21, 323)

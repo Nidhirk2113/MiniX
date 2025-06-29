@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://resjqjjbigsr"]
+
+[ext_resource type="Script" path="res://Props/Plants/plant.gd" id="1_f60pm"]
+[ext_resource type="Texture2D" uid="uid://c08t77ykdcsp" path="res://Props/Sprites/spr_tree1.png" id="2_ppupt"]
+[ext_resource type="PackedScene" uid="uid://bgovrw1irb14y" path="res://Other/HitBox/hit_box.tscn" id="3_jx5ic"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0q0l2"]
+radius = 9.0
+height = 28.0
+
+[node name="Plant" type="Node2D"]
+position = Vector2(0, -11)
+script = ExtResource("1_f60pm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ppupt")
+
+[node name="HitBox" parent="." instance=ExtResource("3_jx5ic")]
+collision_layer = 272
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
+position = Vector2(0, 11)
+shape = SubResource("CapsuleShape2D_0q0l2")
+debug_color = Color(0.150107, 0.63736, 0.297595, 0.42)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 11)
+shape = SubResource("CapsuleShape2D_0q0l2")
+debug_color = Color(0.165742, 0.644107, 0, 0.42)
