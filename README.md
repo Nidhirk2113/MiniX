@@ -91,14 +91,14 @@ This project is officially published in the *International Journal of Engineerin
 
 This project was collaboratively developed as part of the mini project (2024–2025) at **Department of Computer Science and Design, DSATM**.
 
-- **Nidhi Kulkarni**  
-  Role: Built the core storyline, designed one scene, and coordinated publication work.
+- [**Nidhi Kulkarni**](https://github.com/Nidhirk2113)  
+  : Built the core storyline, designed one scene, and coordinated publication work.
 
 - **Aesha T Patel**  
   Role: Developed one scene and contributed to documentation and academic formatting.
 
 - [**Iffah Aafreen**](https://github.com/iffahaafreen)
-  Role: Built one biome scene and managed the entire game flow, logic sequencing, and gameplay integration.
+  : Built one biome scene and managed the entire game flow, logic sequencing, and gameplay integration.
 
 > 🎨 Sprites & Assets: Open-source from [itch.io](https://itch.io/)  
 > 🛠 Engine: Godot 4
